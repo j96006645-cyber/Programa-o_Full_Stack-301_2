@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+
+    <h1>Usuarios cadastrados</h1>
+
+    <% usuarios.forEach(function(usuario) { %>
+
+        <h3>Nome: <%= usuario.Nome %></h3>
+        <p>Login: <%= usuario.Login %></p>
+
+        <form action="/atualizar_usuario" method="POST">
+            <input type="hidden" name="id" value="<%= usuario._id %>">
+
+            <input type="text" name="nome" placeholder="Novo nome" required>
+            <input type="text" name="login" placeholder="Novo login" required>
+            <input type="password" name="senha" placeholder="Nova senha" required>
+
+            <button type="submit">Atualizar</button>
+        </form>
+
+        <form action="/excluir_usuario" method="POST">
+            <input type="hidden" name="id" value="<%= usuario._id %>">
+
+            <button type="submit">Excluir</button>
+        </form>
+
+        <hr>
+
+    <% }); %>
+
+    <a href="/">Voltar</a>
+
+</body>
+</html>

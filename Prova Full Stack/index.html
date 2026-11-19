@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOME_DA_PAGINA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="java_script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>TÍTULO PRINCIPAL</h1>
+        <h2>Subtítulo</h2>
+        <p>Descrição da página.</p>
+    </header>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <a href="Projects.html">Início</a>
+        <a href="Cadastro.html">Cadastro</a>
+        <a href="Login.html">Login</a>
+        <a href="Canvas.html">Canvas</a>
+        <a href="Animation.html">Animação</a>
+        <a href="/blog">Blog</a>
+        <a href="/carros">Carros</a>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- TEXTOS E FORMATAÇÃO -->
+        <section>
+            <h2>Textos</h2>
+
+            <h1>Título 1</h1>
+            <h2>Título 2</h2>
+            <h3>Título 3</h3>
+            <h4>Título 4</h4>
+            <h5>Título 5</h5>
+            <h6>Título 6</h6>
+
+            <p>Parágrafo normal.</p>
+
+            <b>Texto em negrito.</b>
+            <strong>Texto importante.</strong>
+            <i>Texto em itálico.</i>
+            <em>Texto enfatizado.</em>
+            <small>Texto pequeno.</small>
+            <mark>Texto destacado.</mark>
+            <del>Texto removido.</del>
+            <ins>Texto inserido.</ins>
+            <sub>Subscrito.</sub>
+            <sup>Sobrescrito.</sup>
+
+            <br>
+            <hr>
+
+            <div>
+                Bloco de conteúdo.
+            </div>
+
+            <span>Texto em linha.</span>
+        </section>
+
+        <!-- LINKS E IMAGENS -->
+        <section>
+            <h2>Links e imagens</h2>
+
+            <a href="https://www.google.com">Link externo</a>
+
+            <br>
+
+            <a href="outra_pagina.html">Link para outra página</a>
+
+            <br>
+
+            <img
+                src="imagem.png"
+                alt="Descrição da imagem"
+                width="300"
+                height="200"
+            >
+        </section>
+
+        <!-- LISTAS -->
+        <section>
+            <h2>Listas</h2>
+
+            <h3>Lista não ordenada</h3>
+
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <h3>Lista ordenada</h3>
+
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+        </section>
+
+        <!-- TABELAS -->
+        <section>
+            <h2>Tabela</h2>
+
+            <table border="1">
+
+                <caption>Título da tabela</caption>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Nome 1</td>
+                        <td>20</td>
+                        <td>
+                            <a href="pagina.html">Abrir</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Nome 2</td>
+                        <td>21</td>
+                        <td>
+                            <a href="pagina.html">Abrir</a>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Final da tabela</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+
+        <!-- PROJECTS.HTML -->
+        <section>
+            <h2>Projects</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Projeto</th>
+                    <th>Link</th>
+                </tr>
+
+                <tr>
+                    <td>Canvas</td>
+                    <td><a href="Canvas.html">Canvas</a></td>
+                </tr>
+
+                <tr>
+                    <td>Animation</td>
+                    <td><a href="Animation.html">Animation</a></td>
+                </tr>
+
+                <tr>
+                    <td>Get - Post - Template</td>
+                    <td><a href="Login.html">Login</a></td>
+                </tr>
+
+                <tr>
+                    <td>Blog</td>
+                    <td><a href="/blog">Blog</a></td>
+                </tr>
+
+                <tr>
+                    <td>Banco de Dados</td>
+                    <td><a href="/carros">Carros</a></td>
+                </tr>
+
+            </table>
+        </section>
+
+        <!-- FORMULÁRIO GET -->
+        <section>
+            <h2>Formulário GET</h2>
+
+            <form action="/receber" method="GET">
+
+                <label for="nome_get">Nome:</label>
+                <input
+                    type="text"
+                    id="nome_get"
+                    name="nome"
+                >
+
+                <label for="idade_get">Idade:</label>
+                <input
+                    type="number"
+                    id="idade_get"
+                    name="idade"
+                >
+
+                <button type="submit">Enviar GET</button>
+
+            </form>
+        </section>
+
+        <!-- FORMULÁRIO POST -->
+        <section>
+            <h2>Formulário POST</h2>
+
+            <form action="/receber" method="POST">
+
+                <label for="nome_post">Nome:</label>
+                <input
+                    type="text"
+                    id="nome_post"
+                    name="nome"
+                    required
+                >
+
+                <label for="senha_post">Senha:</label>
+                <input
+                    type="password"
+                    id="senha_post"
+                    name="senha"
+                    required
+                >
+
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                >
+
+                <label for="idade">Idade:</label>
+                <input
+                    type="number"
+                    id="idade"
+                    name="idade"
+                >
+
+                <label for="data">Data:</label>
+                <input
+                    type="date"
+                    id="data"
+                    name="data"
+                >
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                ></textarea>
+
+                <label for="opcao">Opção:</label>
+
+                <select id="opcao" name="opcao">
+                    <option value="A">Opção A</option>
+                    <option value="B">Opção B</option>
+                </select>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="aceito"
+                        value="sim"
+                    >
+                    Aceito
+                </label>
+
+                <button type="submit">Enviar POST</button>
+
+            </form>
+        </section>
+
+        <!-- CADASTRO DE USUÁRIO -->
+        <section>
+            <h2>Cadastro de usuário</h2>
+
+            <form action="/cadastrar_usuario" method="POST">
+
+                <label for="nome_usuario">Nome:</label>
+                <input
+                    type="text"
+                    id="nome_usuario"
+                    name="nome"
+                    required
+                >
+
+                <label for="login_usuario">Login:</label>
+                <input
+                    type="text"
+                    id="login_usuario"
+                    name="login"
+                    required
+                >
+
+                <label for="senha_usuario">Senha:</label>
+                <input
+                    type="password"
+                    id="senha_usuario"
+                    name="senha"
+                    required
+                >
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+        </section>
+
+        <!-- LOGIN -->
+        <section>
+            <h2>Login</h2>
+
+            <form action="/login" method="POST">
+
+                <label for="login">Login:</label>
+                <input
+                    type="text"
+                    id="login"
+                    name="login"
+                    required
+                >
+
+                <label for="senha">Senha:</label>
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    required
+                >
+
+                <button type="submit">Entrar</button>
+
+            </form>
+        </section>
+
+        <!-- CADASTRO DE POST NO BLOG -->
+        <section>
+            <h2>Cadastrar post</h2>
+
+            <form action="/cadastrar_post" method="POST">
+
+                <label for="titulo">Título:</label>
+                <input
+                    type="text"
+                    id="titulo"
+                    name="titulo"
+                    required
+                >
+
+                <label for="resumo">Resumo:</label>
+                <textarea
+                    id="resumo"
+                    name="resumo"
+                    required
+                ></textarea>
+
+                <label for="conteudo">Conteúdo:</label>
+                <textarea
+                    id="conteudo"
+                    name="conteudo"
+                    required
+                ></textarea>
+
+                <button type="submit">Publicar</button>
+
+            </form>
+        </section>
+
+        <!-- CADASTRO DE CARROS -->
+        <section>
+            <h2>Cadastrar carro</h2>
+
+            <form action="/cadastrar_carro" method="POST">
+
+                <label for="marca">Marca:</label>
+                <input
+                    type="text"
+                    id="marca"
+                    name="marca"
+                    required
+                >
+
+                <label for="modelo">Modelo:</label>
+                <input
+                    type="text"
+                    id="modelo"
+                    name="modelo"
+                    required
+                >
+
+                <label for="ano">Ano:</label>
+                <input
+                    type="number"
+                    id="ano"
+                    name="ano"
+                    required
+                >
+
+                <label for="quantidade">Quantidade disponível:</label>
+                <input
+                    type="number"
+                    id="quantidade"
+                    name="Qtde_disponivel"
+                    required
+                >
+
+                <button type="submit">Cadastrar carro</button>
+
+            </form>
+        </section>
+
+        <!-- ATUALIZAR CARRO -->
+        <section>
+            <h2>Atualizar carro</h2>
+
+            <form action="/atualizar_carro" method="POST">
+
+                <label for="id_carro">ID do carro:</label>
+                <input
+                    type="text"
+                    id="id_carro"
+                    name="id"
+                    required
+                >
+
+                <label for="nova_marca">Marca:</label>
+                <input
+                    type="text"
+                    id="nova_marca"
+                    name="marca"
+                >
+
+                <label for="novo_modelo">Modelo:</label>
+                <input
+                    type="text"
+                    id="novo_modelo"
+                    name="modelo"
+                >
+
+                <label for="novo_ano">Ano:</label>
+                <input
+                    type="number"
+                    id="novo_ano"
+                    name="ano"
+                >
+
+                <label for="nova_quantidade">Quantidade:</label>
+                <input
+                    type="number"
+                    id="nova_quantidade"
+                    name="Qtde_disponivel"
+                >
+
+                <button type="submit">Atualizar</button>
+
+            </form>
+        </section>
+
+        <!-- EXCLUIR CARRO -->
+        <section>
+            <h2>Excluir carro</h2>
+
+            <form action="/excluir_carro" method="POST">
+
+                <label for="id_excluir">ID do carro:</label>
+                <input
+                    type="text"
+                    id="id_excluir"
+                    name="id"
+                    required
+                >
+
+                <button type="submit">Excluir</button>
+
+            </form>
+        </section>
+
+        <!-- VENDER CARRO -->
+        <section>
+            <h2>Vender carro</h2>
+
+            <form action="/vender_carro" method="POST">
+
+                <label for="id_venda">ID do carro:</label>
+                <input
+                    type="text"
+                    id="id_venda"
+                    name="id"
+                    required
+                >
+
+                <button type="submit">Vender</button>
+
+            </form>
+        </section>
+
+        <!-- CANVAS - LAB 5 -->
+        <section>
+            <h2>Canvas</h2>
+
+            <canvas
+                id="meuCanvas"
+                width="300"
+                height="300"
+            >
+                Seu navegador não suporta Canvas.
+            </canvas>
+        </section>
+
+        <!-- ANIMATION - LAB 6 -->
+        <section>
+            <h2>Animação</h2>
+
+            <canvas
+                id="canvasAnimacao"
+                width="300"
+                height="300"
+            >
+                Seu navegador não suporta Canvas.
+            </canvas>
+        </section>
+
+        <!-- IFRAME -->
+        <section>
+            <h2>Vídeo ou conteúdo externo</h2>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ID_DO_VIDEO"
+                title="Vídeo"
+                allowfullscreen
+            ></iframe>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Nome do autor</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
